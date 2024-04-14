@@ -20,9 +20,7 @@
             </div>
             <div class="flex items-baseline mt-4 mb-6 text-gray-700 dark:text-gray-300">
                 <div class="flex space-x-2">
-
                     <label class="text-center">
-
                         <input type="radio"
                             class="flex items-center justify-center w-6 h-6 accent-violet-600 bg-gray-100 rounded-lg dark:bg-gray-600"
                             name="size" value="xs">XS
