@@ -12,7 +12,8 @@
             <img src="{{$shoe->image}}" alt="shopping image"
                 class="object-cover w-full h-48 md:h-full rounded-t-lg md:rounded-l-lg md:rounded-t-none">
         </div>
-        <form class="flex-auto p-6">
+        <form class="flex-auto p-6" method="POST" action="/payments">
+            @csrf
             <div class="flex flex-wrap">
                 <h1 class="flex-auto text-xl font-semibold dark:text-gray-50">{{$shoe->name}}</h1>
                 <div class="text-xl font-semibold text-gray-500 dark:text-gray-300">Ksh{{$shoe->price}}</div>
@@ -45,9 +46,10 @@
 
             </div>
             <div class="flex mb-4 text-sm font-medium">
-                <button type="button"
+                <button type="submit"
                     class="py-2 px-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg ">Buy
                     now</button>
+                    <input type="text" name="price" value="{{$shoe->price}}" hidden>
             </div>
 
         </form>
