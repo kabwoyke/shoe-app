@@ -50,7 +50,7 @@ Route::post("/payments" , function(Request $request){
         "PartyA" => "254758262427",
         "PartyB" => "174379",
         "PhoneNumber" =>"254758262427",
-        "CallBackURL" => "https://large-eyes-show.loca.lt/callback",
+        "CallBackURL" => "https://shoe-app-production.up.railway.app/callback",
         "AccountReference" => "Test",
         "TransactionDesc" => "Test"
     ]);
